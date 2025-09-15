@@ -3,6 +3,10 @@
     --basic-red: #6a0404;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
@@ -39,12 +43,54 @@ a{
 }
 
 .deal-section{
-    background-color:var(--basic-grey);
+    background-image: url("https://picsum.photos/800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--basic-grey);
     padding: 1rem;
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
+/*
+    img{
+        
+       
+        width: 100%;
+    }
+
+    h2, p, a{
+        position: absolute;
+    }
+
+    p{
+        top: 63px;
+    }
+
+    a{
+        top: 160px;
+    }*/
 
 }
 
 /*HOVEDINNHOLD*/
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+    section{
+        h2{
+            text-align: center;
+        }
+        article{
+            margin: 0 auto;
+        }
+    }
+}
+
+
 
 article{
     margin: 1rem 0;
@@ -67,4 +113,31 @@ article{
     padding: 1rem;
     border: none;
 
+}
+
+.side-container{
+    background-color: var(--basic-grey);
+    padding: 1rem;
+
+    form{
+
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer{
+    background-color: #212324;
+    color: #fff;
+    padding: 1rem;
+    min-height: 150px;
 }
